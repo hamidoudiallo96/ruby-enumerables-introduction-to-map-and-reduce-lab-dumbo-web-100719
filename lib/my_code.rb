@@ -63,10 +63,14 @@ def reduce_to_all_false(source_array)
   total = 0
   i=0
   while i<source_array.length
-    total += source_array[i]
-    i+=1
+  if source_array[i].is_a? String  
+    return false
+  else
+     total += source_array[i]
   end
-  return true if total< 0
+   i+=1
+  end
+  return total
 end
 
 
