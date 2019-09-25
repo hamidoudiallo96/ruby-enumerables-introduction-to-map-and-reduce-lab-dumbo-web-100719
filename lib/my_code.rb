@@ -62,7 +62,7 @@ end
 def reduce_to_all_false(source_array)
   i=0
   while i<source_array.length
-    return 1 if !1
+    return true if arr[i] == 0
     i+=1
   end
 end
