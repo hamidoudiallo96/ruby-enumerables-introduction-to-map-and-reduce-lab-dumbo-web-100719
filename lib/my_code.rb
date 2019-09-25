@@ -60,11 +60,13 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_all_false(source_array)
+  total = 0
   i=0
   while i<source_array.length
-    return true if arr[i] == "hello"
+    total += source_array[i]
     i+=1
   end
+  return true if total< 0
 end
 
 
