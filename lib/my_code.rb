@@ -53,7 +53,9 @@ end
 
 def reduce_to_all_true(source_array)
   value = true
-  if value = 
+  source_array.each do |item|
+    if 
+  end
   
 end
 
