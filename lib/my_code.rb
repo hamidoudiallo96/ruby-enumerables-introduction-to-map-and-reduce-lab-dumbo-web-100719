@@ -62,8 +62,12 @@ end
 def reduce_to_all_false(source_array)
   total = 0
   i=0
+  while i<source_array.length
   return false if source_array[i] == false
   total+= source_array[i]
+   i+=1
+  end
+ return total
 end
 
 
